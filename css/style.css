@@ -1,0 +1,108 @@
+
+
+/* Colores personalizados */
+:root {
+    --primary-color: #A9BCD0;
+    --secondary-color: #8D99AE;
+    --three-color: #1B1B1E;
+    --four-color: #373f51;
+    --five-color: #ffff;
+    --six-color: #58A4B0;
+    --seven-color: #D64045;
+    --eight-color: #FCAB10;
+    --background-color: #D8DBE2;
+    --text-color: #8D99AE;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+.navbar {
+    background-color: var(--four-color);
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar a {
+    color: var(--five-color);
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+.title {
+    color: var(--five-color);
+}
+
+.restaurant-list {
+    padding-top: 1rem;
+}
+
+.footer {
+    background-color: var(--four-color);
+    color: var(--five-color);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.card {
+    margin-bottom: 1rem;
+    width: 20rem;
+}
+
+#detalle {
+    color: var(--six-color);
+}
+
+.text-corto-general {
+    color: var(--seven-color);
+    padding-bottom: 1rem;
+}
+
+.title-general {
+    color: var(--six-color);
+    padding-bottom: 1rem;
+}
+
+.card.card-general {
+    width: 20rem;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn.btn-general {
+    background-color: var(--six-color);
+    color: var(--five-color);
+    border-radius: 2rem;
+}
+
+.btn.edit-general-btn {
+    background-color: var(--eight-color);
+    color: var(--five-color);
+    border-radius: 2rem;
+}
+
+.btn.btn-cancel {
+    background-color: var(--seven-color);
+    color: var(--five-color);
+    border-radius: 2rem;
+}
+
+.title-wellcome {
+    color: var(--secondary-color);
+    padding-bottom: 1rem;
+}
