@@ -4,8 +4,11 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <h5 class="title">Sistema de Reservas de Restaurantes</h5>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
+                <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="index_view_admin.php">Inicio</a>
                     <a class="nav-link" href="reservations_view_admin.php">Gestionar Reservas</a>
                     <a class="nav-link" href="profile_view.php">Mi Perfil</a>
