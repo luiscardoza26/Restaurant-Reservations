@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-08-2024 a las 00:11:32
+-- Tiempo de generación: 12-08-2024 a las 00:58:24
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -38,13 +38,6 @@ CREATE TABLE `reservations` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Volcado de datos para la tabla `reservations`
---
-
-INSERT INTO `reservations` (`id`, `user_id`, `restaurant_id`, `reservation_date`, `reservation_time`, `party_size`, `status`, `created_at`) VALUES
-(8, 8, 2, '2024-08-12', '15:07:00', 2, 'confirmed', '2024-08-11 06:07:13');
-
 -- --------------------------------------------------------
 
 --
@@ -60,14 +53,6 @@ CREATE TABLE `restaurants` (
   `cuisine_type` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Volcado de datos para la tabla `restaurants`
---
-
-INSERT INTO `restaurants` (`id`, `name`, `address`, `phone`, `created_at`, `cuisine_type`) VALUES
-(2, 'El Cielo', 'Car 11 112 c12', '3204748596', '2024-08-09 17:23:58', 'Italiana'),
-(3, 'El Paraiso', 'Car 116 112 a2', '3504125241', '2024-08-11 08:32:55', 'Gourmet');
-
 -- --------------------------------------------------------
 
 --
@@ -82,13 +67,6 @@ CREATE TABLE `reviews` (
   `comment` text DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `reviews`
---
-
-INSERT INTO `reviews` (`id`, `user_id`, `restaurant_id`, `rating`, `comment`, `created_at`) VALUES
-(4, 8, 2, 5, 'Muy buena comida y la atención fue excelente.', '2024-08-11 06:26:04');
 
 -- --------------------------------------------------------
 
@@ -107,14 +85,6 @@ CREATE TABLE `users` (
   `last_login_attempt` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `nit` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `created_at`, `role`, `login_attempts`, `last_login_attempt`, `nit`) VALUES
-(5, 'Mario', '$2y$10$bnXufHvwNmI4saxNLYqlGO04qFL3WzxAOoKONqzNjb.ZDMlxawPAa', 'mario@gmail.com', '2024-08-09 22:11:53', 'restaurant_admin', 0, '2024-08-11 08:36:52', '254186749'),
-(8, 'Carlos', '$2y$10$whYbf3oeSa5ExBdY4DFc8OVONnT6NcDtV7mjIvvyYDYzZczNG5pxK', 'carlos@gmail.com', '2024-08-11 03:06:02', 'user', 3, '2024-08-11 07:12:56', NULL);
 
 --
 -- Índices para tablas volcadas
