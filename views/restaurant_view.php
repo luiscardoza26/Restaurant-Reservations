@@ -11,6 +11,7 @@
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="index_view.php">Inicio</a>
                     <a class="nav-link" href="search_view.php">Buscar</a>
+                    <a class="nav-link" href="profile_view.php">Mi Perfil</a>
                     <?php if (isLoggedIn()): ?>
                         <a class="nav-link" href="../logout.php">Cerrar sesión</a>
                     <?php else: ?>
