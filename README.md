@@ -5,5 +5,5 @@
 4. Configurar el archivo "config.php" con las configuraciones de tu gestor de BD
 5. Una vez tengas todo configurado, haz lo del paso 6.
 6. Inicializa apache y mysql en tu gestor de BD.
-7. En el navegador, ir a la direccion http://localhost/restaurant-reservations/views/index_view.php
+7. En el navegador, ir a la direccion http://localhost/restaurant-reservations/
 8. Disfruta de la aplicacion
