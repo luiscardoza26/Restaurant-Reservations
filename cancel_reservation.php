@@ -6,7 +6,7 @@ require_once 'includes/csrf.php';
 
 // Verificar si el usuario ha iniciado sesión
 if (!isLoggedIn()) {
-    redirectTo('login_view.php');
+    redirectTo('login.php');
 }
 
 $reservation_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
@@ -49,4 +49,4 @@ if ($stmt = $conn->prepare($sql)) {
 $conn->close();
 
 // Redirigir al perfil del usuario
-redirectTo('./views/profile_view.php');
+redirectTo('profile.php');

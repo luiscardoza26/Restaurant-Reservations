@@ -4,7 +4,7 @@ require_once 'includes/db.php';
 require_once 'includes/functions.php';
 
 if (!isLoggedIn()) {
-    redirectTo('login_view.php');
+    redirectTo('login.php');
 }
 
 $user_id = $_SESSION['id'];
@@ -39,5 +39,5 @@ $conn->close();
 
 // Cerrar la sesión y redirigir al usuario
 session_destroy();
-redirectTo('index_view.php?message=account_deleted');
+redirectTo('index.php?message=account_deleted');
 ?>
